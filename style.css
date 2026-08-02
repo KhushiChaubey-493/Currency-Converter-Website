@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght00,700:1,300&family=Poppins:wght@400;@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    background-color: rgb(35 7 126);
+    color: white;
+    padding: 23px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav ul li a:hover {
+    color: rgb(105, 67, 207);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    min-height: 80vh;
+    margin: auto 230px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container form input[type='number'],
+select,
+label {
+    font-size: 25px;
+    width: 23vw;
+    margin-bottom: 23px;
+}
+
+.btn {
+    width: 144px;
+    padding: 12px 23px;
+    background-color: rgb(35 7 126);
+    color: white;
+    border-radius: 13px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.output {
+    margin-top: 30px;
+    display: none;
+}
+
+.output h2 {
+    color: rgb(35 7 126);
+}
+
+.output table {
+    width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.output table th{
+    padding: 23px;
+}
+footer {
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width:600px) {
+    nav{
+        flex-direction: column;
+        font-size: 14px;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    nav ul li{
+        margin: 5px 13px;
+    }
+    .container{
+        max-width: 95vw;
+    }
+    .container form input[type='number'],select,lable{
+        width: 80vw;
+    }
+}
